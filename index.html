@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portifolio eu acho</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__ring">
+      <span></span>
+      <span></span>
+    </div>
+    <p class="loader__text">carregando<span class="loader__dots">...</span></p>
+  </div>
+
+  <header id="navbar" class="navbar" role="banner">
+    <nav class="navbar__inner container" aria-label="navegacao principal">
+
+      <a href="#inicio" class="navbar__logo" aria-label="ir para o inicio">
+        <span class="navbar__logo-bracket">&lt;</span>
+        Dev
+        <span class="navbar__logo-bracket">/&gt;</span>
+      </a>
+
+      <button
+        class="navbar__toggle"
+        id="navToggle"
+        aria-label="abrir menu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+
+      <ul class="navbar__menu" id="navMenu" role="list">
+        <li><a href="#inicio"    class="navbar__link" data-section="inicio">inicio</a></li>
+        <li><a href="#sobre"     class="navbar__link" data-section="sobre">sobre</a></li>
+        <li><a href="#saiba-mais" class="navbar__link" data-section="saiba-mais">saiba mais</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section id="inicio" class="section section--hero" aria-labelledby="hero-title">
+
+      <div class="hero__orb" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--secondary" aria-hidden="true"></div>
+
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+
+        <span class="hero__eyebrow fade-up">bem vindo ao meu portfolio</span>
+
+        <h1 id="hero-title" class="hero__title fade-up">
+          testando meus
+          <span class="hero__title-accent">conhecimentos</span>
+          no assunto
+        </h1>
+
+        <p class="hero__subtitle fade-up">atividade a ser feita ou algo do tipo, na real nao entendi direito o que era pra fazer mas fiz
+        </p>
+
+        <p class="hero__description fade-up">
+          Este portfólio foi construído com <strong>HTML</strong>,
+          <strong>CSS</strong> e <strong>JavaScript</strong>
+        </p>
+
+        <div class="hero__actions fade-up">
+          <a href="#sobre" class="btn btn--primary">
+            explorar projeto
+            <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#saiba-mais" class="btn btn--ghost">saiba mais</a>
+        </div>
+
+        <div class="hero__scroll-hint fade-up" aria-hidden="true">
+          <span class="hero__scroll-line"></span>
+          <span class="hero__scroll-label">role para baixo</span>
+        </div>
+
+      </div>
+    </section>
+    <section id="sobre" class="section" aria-labelledby="sobre-title">
+      <div class="container">
+
+        <div class="section__header">
+          <span class="section__eyebrow reveal">fundamentos</span>
+          <h2 id="sobre-title" class="section__title reveal">
+            tecnologias utilizadas
+          </h2>
+          <p class="section__description reveal">
+            Este projeto demonstra o poder das três tecnologias nativas da web,
+            combinadas com boas práticas e atenção ao detalhe.
+            (esse texto e os abaixo foram feitos com ia pra tapar buraco)
+          </p>
+        </div>
+
+        <div class="cards-grid" role="list">
+
+          <article class="card reveal" role="listitem">
+            <div class="card__icon-wrap" aria-hidden="true">
+              <svg class="card__icon" viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="12" fill="url(#grad-html)"/>
+                <defs>
+                  <linearGradient id="grad-html" x1="0" y1="0" x2="48" y2="48">
+                    <stop offset="0%" stop-color="#E44D26"/>
+                    <stop offset="100%" stop-color="#F16529"/>
+                  </linearGradient>
+                </defs>
+                <text x="50%" y="54%" dominant-baseline="middle"
+                  text-anchor="middle" font-size="22" fill="white">&lt;/&gt;</text>
+              </svg>
+            </div>
+            <h3 class="card__title">HTML5</h3>
+            <p class="card__text">
+              A espinha dorsal de toda página web. Define a estrutura semântica
+              do conteúdo, garantindo acessibilidade, SEO e organização lógica
+              dos elementos.
+            </p>
+            <div class="card__badge">Estrutura</div>
+          </article>
+
+          <article class="card reveal" role="listitem">
+            <div class="card__icon-wrap" aria-hidden="true">
+              <svg class="card__icon" viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="12" fill="url(#grad-css)"/>
+                <defs>
+                  <linearGradient id="grad-css" x1="0" y1="0" x2="48" y2="48">
+                    <stop offset="0%" stop-color="#264DE4"/>
+                    <stop offset="100%" stop-color="#2965F1"/>
+                  </linearGradient>
+                </defs>
+                <text x="50%" y="54%" dominant-baseline="middle"
+                  text-anchor="middle" font-size="18" fill="white" font-weight="bold">#</text>
+              </svg>
+            </div>
+            <h3 class="card__title">CSS3</h3>
+            <p class="card__text">
+              Responsável por toda a aparência visual. Variáveis, Flexbox, Grid,
+              animações, glassmorphism e media queries constroem a experiência
+              estética e responsiva.
+            </p>
+            <div class="card__badge">Estilo</div>
+          </article>
+
+          <article class="card reveal" role="listitem">
+            <div class="card__icon-wrap" aria-hidden="true">
+              <svg class="card__icon" viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="12" fill="url(#grad-js)"/>
+                <defs>
+                  <linearGradient id="grad-js" x1="0" y1="0" x2="48" y2="48">
+                    <stop offset="0%" stop-color="#F0DB4F"/>
+                    <stop offset="100%" stop-color="#E8CC30"/>
+                  </linearGradient>
+                </defs>
+                <text x="50%" y="54%" dominant-baseline="middle"
+                  text-anchor="middle" font-size="18" fill="#1a1a1a" font-weight="bold">JS</text>
+              </svg>
+            </div>
+            <h3 class="card__title">JavaScript</h3>
+            <p class="card__text">
+              O motor de interatividade. Gerencia scroll suave, animações de
+              entrada via Intersection Observer, estado da navbar e qualquer
+              comportamento dinâmico da página.
+            </p>
+            <div class="card__badge">Interação</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="saiba-mais" class="section section--alt" aria-labelledby="saiba-mais-title">
+      <div class="container">
+
+        <div class="section__header">
+          <span class="section__eyebrow reveal">detalhes</span>
+          <h2 id="saiba-mais-title" class="section__title reveal">
+            sobre este projeto
+          </h2>
+          <p class="section__description reveal">
+            fiz o que consegui revendo o material passado em aula e videos no youtube
+          </p>
+        </div>
+
+        <div class="info-grid">
+
+          <div class="info-card info-card--featured reveal" aria-label="Objetivo do portfólio">
+            <div class="info-card__number" aria-hidden="true">01</div>
+            <h3 class="info-card__title">objetivo do portfolio</h3>
+            <p class="info-card__text">
+              apresentar habilidades tecnicas de forma clara e elegante,
+              demonstrando dominio de HTML, CSS e JavaScript (forma elaborada de dizer "prova")
+            </p>
+          </div>
+
+          <div class="info-card reveal" aria-label="Organização do código">
+            <div class="info-card__number" aria-hidden="true">02</div>
+            <h3 class="info-card__title">organização do codigo</h3>
+            <p class="info-card__text">
+              tres arquivos separados — HTML, CSS e JS — Código limpo e fácil de
+              navegar
+            </p>
+          </div>
+
+          <div class="info-card reveal" aria-label="Responsividade">
+            <div class="info-card__number" aria-hidden="true">03</div>
+            <h3 class="info-card__title">responsividade</h3>
+            <p class="info-card__text">
+              adaptação fluida para desktop, tablet e celular usando flexbox,
+              grid e media queries. nenhum elemento quebra em
+              nenhuma resolucao (acho)
+            </p>
+          </div>
+
+          <div class="info-card reveal" aria-label="Fácil personalização">
+            <div class="info-card__number" aria-hidden="true">04</div>
+            <h3 class="info-card__title">facil personalizacao</h3>
+            <p class="info-card__text">
+              variaveis CSS centralizadas no <code>:root</code> permitem trocar
+              toda a paleta de cores com apenas alguns valores (comentarios
+              mostram exatamente o que editar)
+            </p>
+          </div>
+
+          <div class="info-card info-card--featured reveal" aria-label="Preparado para expansão">
+            <div class="info-card__number" aria-hidden="true">05</div>
+            <h3 class="info-card__title">preparado para expansao</h3>
+            <p class="info-card__text">
+              A estrutura modular facilita adicionar novas secoes — projetos,
+              habilidades, contato — sem quebrar o layout existente, basta
+              seguir os padroes ja estabelecidos no codigo
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <a href="#inicio" class="footer__logo" aria-label="Voltar ao início">
+        <span class="navbar__logo-bracket">&lt;</span>Dev<span class="navbar__logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <a href="#inicio" class="footer__link">inicio</a>
+        <a href="#sobre" class="footer__link">sobre</a>
+        <a href="#saiba-mais" class="footer__link">saiba mais</a>
+      </nav>
+
+      <div class="footer__credits">
+        <p class="footer__copy">
+          &copy; <span id="footerYear"></span> portfolio de yuri.
+          todos os direitos reservados.
+        </p>
+        <p class="footer__thanks">
+          obrigado pela sua visita!
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
